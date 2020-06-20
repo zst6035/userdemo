@@ -1,0 +1,3 @@
+2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Starting UserdemoApplicationTests on BF400255 with PID 14492 (started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - No active profile set, falling back to default profiles: default
+2020-06-20 15:11:46 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Started UserdemoApplicationTests in 10.636 seconds (JVM running for 13.122)

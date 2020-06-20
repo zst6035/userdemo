@@ -1,0 +1,12 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 132 ciObject found
+ciMethod java/nio/Buffer position ()I 2121 1 265 0 -1
+ciMethod java/nio/Buffer position (I)Ljava/nio/Buffer; 2137 1 7475 0 -1
+ciMethod java/nio/Buffer limit ()I 2177 1 272 0 -1
+ciMethod java/nio/Buffer arrayOffset ()I 0 0 1 0 -1
+ciMethod java/lang/Math min (II)I 4097 1 202120 0 -1
+ciMethod sun/nio/cs/UTF_8 updatePositions (Ljava/nio/Buffer;ILjava/nio/Buffer;I)V 2137 1 7691 0 -1
+ciMethod sun/nio/cs/UTF_8 access$200 (Ljava/nio/Buffer;ILjava/nio/Buffer;I)V 2137 1 7691 0 -1
+ciMethod 
