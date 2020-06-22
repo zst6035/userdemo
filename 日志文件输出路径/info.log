@@ -36,3 +36,14 @@
 2020-06-22 09:47:58 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 7.013 seconds (JVM running for 10.167)
 2020-06-22 09:48:44 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-06-22 09:48:44 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-06-22 10:35:16 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 13040 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 10:35:16 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 10:35:19 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 10:35:19 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 10:35:19 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 10:35:19 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 10:35:20 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 10:35:21 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.445 seconds (JVM running for 8.778)
+2020-06-22 10:42:23 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Starting UserdemoApplicationTests on BF400255 with PID 15080 (started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 10:42:23 [main] INFO  com.example.userdemo.UserdemoApplicationTests - No active profile set, falling back to default profiles: default
+2020-06-22 10:42:30 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Started UserdemoApplicationTests in 7.821 seconds (JVM running for 9.672)
