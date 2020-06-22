@@ -1,3 +1,16 @@
-2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Starting UserdemoApplicationTests on BF400255 with PID 14492 (started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - No active profile set, falling back to default profiles: default
-2020-06-20 15:11:46 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Started UserdemoApplicationTests in 10.636 seconds (JVM running for 13.122)
+2020-06-22 09:47:52 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 8720 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 09:47:52 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 09:47:57 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:47:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:47:58 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 7.013 seconds (JVM running for 10.167)
+2020-06-22 09:48:44 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 09:48:44 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-06-22 09:48:44 [http-nio-8080-exec-1] DEBUG com.bjsxt.mapper.UserMapper.login - ==>  Preparing: select * from user where name=? and password=? 
+2020-06-22 09:48:44 [http-nio-8080-exec-1] DEBUG com.bjsxt.mapper.UserMapper.login - ==> Parameters: null, null
+2020-06-22 09:48:44 [http-nio-8080-exec-1] DEBUG com.bjsxt.mapper.UserMapper.login - <==      Total: 0
+2020-06-22 09:49:16 [http-nio-8080-exec-6] DEBUG com.bjsxt.mapper.UserMapper.login - ==>  Preparing: select * from user where name=? and password=? 
+2020-06-22 09:49:16 [http-nio-8080-exec-6] DEBUG com.bjsxt.mapper.UserMapper.login - ==> Parameters: zhangqiqi(String), 123456(String)
+2020-06-22 09:49:16 [http-nio-8080-exec-6] DEBUG com.bjsxt.mapper.UserMapper.login - <==      Total: 0

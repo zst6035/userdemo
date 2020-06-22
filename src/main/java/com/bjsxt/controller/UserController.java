@@ -75,9 +75,10 @@ public class UserController {
         return "redirect:/users/findUserAll";
     }
 
-    @RequestMapping("/login")
+    //前台使用json字符串提交
+    @RequestMapping(value = "/login2", produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public String login(User user){
+    public String login2(@RequestBody  User user){
        User user1= this.userService.loign(user);
        if(user1!=null){
            return "登录成功";
@@ -85,4 +86,14 @@ public class UserController {
        else return "登录失败";
     }
 
+    //前台使用普通表单方式提交
+    @RequestMapping(value = "/login")
+    @ResponseBody
+    public String login(User user){
+        User user1= this.userService.loign(user);
+        if(user1!=null){
+            return "登录成功";
+        }
+        else return "登录失败";
+    }
 }

@@ -1,147 +1,38 @@
-2020-06-20 11:15:17 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 10404 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 11:15:17 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 11:15:21 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:15:21 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 11:15:21 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 11:15:21 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 11:15:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:15:22 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 6.294 seconds (JVM running for 9.353)
-2020-06-20 11:26:59 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 10684 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 11:26:59 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 11:27:04 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:27:04 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 11:27:04 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 11:27:04 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 11:27:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:27:05 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 7.487 seconds (JVM running for 11.943)
-2020-06-20 11:28:25 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-20 11:28:25 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2020-06-20 11:28:25 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.bjsxt.mapper.UserMapper.login'.  It's likely that neither a Result Type nor a Result Map was specified.] with root cause
-org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.bjsxt.mapper.UserMapper.login'.  It's likely that neither a Result Type nor a Result Map was specified.
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.validateResultMapsCount(DefaultResultSetHandler.java:275) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:180) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.0.jar:3.4.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
-	at com.sun.proxy.$Proxy69.selectOne(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:167) ~[mybatis-spring-1.3.0.jar:1.3.0]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75) ~[mybatis-3.4.0.jar:3.4.0]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53) ~[mybatis-3.4.0.jar:3.4.0]
-	at com.sun.proxy.$Proxy72.login(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at com.sun.proxy.$Proxy73.login(Unknown Source) ~[?:?]
-	at com.bjsxt.service.impl.UserServiceImpl.loign(UserServiceImpl.java:48) ~[classes/:?]
-	at com.bjsxt.controller.UserController.login(UserController.java:78) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.7.RELEASE.jar:5.2.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_161]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.36.jar:9.0.36]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-2020-06-20 11:30:44 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 7248 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 11:30:44 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 11:30:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:30:47 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 11:30:47 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 11:30:48 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 11:30:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:30:48 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.558 seconds (JVM running for 8.122)
-2020-06-20 11:31:00 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-20 11:31:01 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2020-06-20 11:44:40 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 8896 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 11:44:40 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 11:44:45 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:44:45 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 11:44:45 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 11:44:45 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 11:44:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 11:44:46 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 6.355 seconds (JVM running for 9.296)
-2020-06-20 11:45:04 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-20 12:01:03 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 13652 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 12:01:03 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 12:01:06 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 12:01:06 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 12:01:06 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 12:01:07 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 12:01:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 12:01:07 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.179 seconds (JVM running for 7.923)
-2020-06-20 13:20:46 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-20 13:20:46 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2020-06-20 15:07:56 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 11616 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 15:07:56 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
-2020-06-20 15:08:00 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2020-06-20 15:08:00 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-06-20 15:08:00 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-06-20 15:08:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-06-20 15:08:01 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2020-06-20 15:08:01 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.976 seconds (JVM running for 9.423)
-2020-06-20 15:09:05 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Starting UserdemoApplicationTests on BF400255 with PID 11608 (started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 15:09:05 [main] INFO  com.example.userdemo.UserdemoApplicationTests - No active profile set, falling back to default profiles: default
-2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Starting UserdemoApplicationTests on BF400255 with PID 14492 (started by shouting_zhang in D:\java_interface\testng\userdemo)
-2020-06-20 15:11:36 [main] INFO  com.example.userdemo.UserdemoApplicationTests - No active profile set, falling back to default profiles: default
-2020-06-20 15:11:46 [main] INFO  com.example.userdemo.UserdemoApplicationTests - Started UserdemoApplicationTests in 10.636 seconds (JVM running for 13.122)
+2020-06-22 09:28:41 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 6848 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 09:28:41 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 09:28:45 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:28:45 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:28:45 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 09:28:45 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:28:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:28:46 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 6.498 seconds (JVM running for 9.619)
+2020-06-22 09:33:11 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 13344 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 09:33:11 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 09:33:15 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:33:15 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:33:15 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 09:33:15 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:33:16 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:33:16 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.712 seconds (JVM running for 7.949)
+2020-06-22 09:34:09 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 09:34:52 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-06-22 09:41:42 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 13472 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 09:41:42 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 09:41:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:41:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:41:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 09:41:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:41:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:41:47 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 5.846 seconds (JVM running for 7.904)
+2020-06-22 09:41:56 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 09:41:56 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-06-22 09:47:52 [main] INFO  com.UserdemoApplication - Starting UserdemoApplication on BF400255 with PID 8720 (D:\java_interface\testng\userdemo\target\classes started by shouting_zhang in D:\java_interface\testng\userdemo)
+2020-06-22 09:47:52 [main] INFO  com.UserdemoApplication - No active profile set, falling back to default profiles: default
+2020-06-22 09:47:57 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-22 09:47:57 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:47:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-22 09:47:58 [main] INFO  com.UserdemoApplication - Started UserdemoApplication in 7.013 seconds (JVM running for 10.167)
+2020-06-22 09:48:44 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 09:48:44 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
